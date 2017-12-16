@@ -1,23 +1,20 @@
 class Circle:
 
     def calcCir(self):
-        a = 1
-        return a
+        print("원")
 class  Rectangle:
 
     def calcRec(self):
-        b = 2
-        return b
+        print("사각형")
 class Sam:
     def calcSam(self):
-        c = 3
-        return c
-
+        print("삼각형")
+    
 class Shape(Circle, Rectangle, Sam):
     def calcAres(self):
-        print("원의 면적:" , Circle.calcCir())
-        print("사각형의 면적:",  Rectangle.calcRec())
-        print("삼각형의 면적:" ,  Sam.calcSam())
+        Circle.calcCir()
+        Rectangle.calcRec()
+        Sam.calcSam()
 
 
 objectSam = Shape()
