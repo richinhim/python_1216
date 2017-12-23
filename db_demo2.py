@@ -7,7 +7,7 @@ def insert_table():
     cur = conn.cursor()
 
     data = [
-        ('노틀담의 꼽추','노인','노인출판사',20,20),
+        ('노인과바다 ','노인','노인출판사',20,20),
         ('한국사', '노인1', '노인출판사1', 20, 20)
     ]
 
@@ -19,5 +19,6 @@ def insert_table():
 
     conn.commit()
 
-insert_table()
+if __name__ == "__main__":
+    insert_table()
 
