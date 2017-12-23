@@ -1,3 +1,5 @@
+#coding:euc-kr
+
 from tkinter import *
 
 class Wiget:
@@ -5,26 +7,26 @@ class Wiget:
     def __init__(self):
         w = Tk()
 
-        w.title("ìœ„ì ¯")
+        w.title("À§Á¬")
         f = Frame(w)
 
-        f.pack()
+        f.pack() #¾ÐÃà ¹èÄ¡ °ü¸®ÀÚ
 
         self.v1 = IntVar()
 
-        cb = Checkbutton(f, text = 'ì§„í•˜ê²Œ', variable= self.v1, command=self.cb)
+        cb = Checkbutton(f, text = 'ÁøÇÏ°Ô', variable= self.v1, command=self.cb)
 
         cb.grid(row=1, column=1)
 
         self.v2 = IntVar()
 
-        rb1 = Radiobutton(f, text='ë‚¨', variable = self.v2, value=1, command=self.rb)
-        rb2 = Radiobutton(f, text='ì—¬', variable=self.v2, value=2, command=self.rb)
+        rb1 = Radiobutton(f, text='³²', variable = self.v2, value=1, command=self.rb)
+        rb2 = Radiobutton(f, text='¿©', variable=self.v2, value=2, command=self.rb)
 
         rb1.grid(row=2, column=1)
         rb2.grid(row=2, column=2)
 
-        w.mainloop()
+        w.mainloop() # ÀÌº¥Æ® Ã³¸®
 
     def cb(self):
         print(self.v1.get())
